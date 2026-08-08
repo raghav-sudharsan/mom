@@ -63,10 +63,10 @@ export const ProductCard = ({ product, onQuickView }: ProductCardProps) => {
           )}
         </div>
 
-        {/* Product ID Monospace Badge */}
+        {/* Clear Item Code Badge for non-technical customers */}
         <div className="product-card-pid">
-          <span className="product-id-badge">
-            ID: {product.productId}
+          <span className="product-id-badge" title="Unique Product Code">
+            Code: {product.productId}
           </span>
         </div>
       </div>
@@ -94,13 +94,13 @@ export const ProductCard = ({ product, onQuickView }: ProductCardProps) => {
             )}
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.4rem' }}>
             <button
               onClick={() => onQuickView(product)}
               className="btn-secondary"
-              style={{ minHeight: '40px', padding: '0.4rem 0.6rem', fontSize: '0.85rem' }}
+              style={{ minHeight: '42px', padding: '0.4rem 0.5rem', fontSize: '0.82rem' }}
             >
-              <Eye size={16} />
+              <Eye size={15} />
               <span>Details</span>
             </button>
 
@@ -111,11 +111,12 @@ export const ProductCard = ({ product, onQuickView }: ProductCardProps) => {
               style={{
                 opacity: stockInfo.isOrderable ? 1 : 0.5,
                 cursor: stockInfo.isOrderable ? 'pointer' : 'not-allowed',
-                width: '100%'
+                width: '100%',
+                minHeight: '42px'
               }}
               title={stockInfo.isOrderable ? 'Order on WhatsApp' : 'Currently Unavailable'}
             >
-              <MessageCircle size={16} />
+              <MessageCircle size={15} />
               <span>Order</span>
             </button>
           </div>

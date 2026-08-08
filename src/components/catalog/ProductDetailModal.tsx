@@ -94,7 +94,7 @@ export const ProductDetailModal = ({
             {isBotanical && (
               <div
                 style={{
-                  marginTop: '1.25rem',
+                  marginTop: '1rem',
                   padding: '0.85rem',
                   borderRadius: 'var(--radius-md)',
                   backgroundColor: 'var(--secondary-sage-light)',
@@ -117,17 +117,17 @@ export const ProductDetailModal = ({
               <span className={`badge ${stockInfo.badgeClass}`}>
                 {stockInfo.label}
               </span>
-              <span className="product-id-badge" style={{ fontSize: '0.9rem' }}>
-                Product ID: {product.productId}
+              <span className="product-id-badge" style={{ fontSize: '0.88rem' }}>
+                Item Code: {product.productId}
               </span>
             </div>
 
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '0.5rem', lineHeight: 1.25 }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '0.5rem', lineHeight: 1.25, fontFamily: 'var(--font-heading)' }}>
               {product.name}
             </h2>
 
-            <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.75rem', marginBottom: '1rem' }}>
-              <span style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-main)' }}>
+            <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.75rem', marginBottom: '0.75rem' }}>
+              <span style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--brand-plum)' }}>
                 {formatCurrency(product.price * quantity)}
               </span>
               {product.originalPrice && (
@@ -136,19 +136,19 @@ export const ProductDetailModal = ({
                 </span>
               )}
               {quantity > 1 && (
-                <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                <span style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
                   ({formatCurrency(product.price)} each)
                 </span>
               )}
             </div>
 
-            <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: 1.5, marginBottom: '1.25rem' }}>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: 1.5, marginBottom: '1rem' }}>
               {product.fullDescription}
             </p>
 
             {/* Fabric / Net Weight / Details */}
             {(product.fabric || product.netWeight) && (
-              <div style={{ marginBottom: '1rem', fontSize: '0.9rem', color: 'var(--text-main)', display: 'flex', gap: '1rem' }}>
+              <div style={{ marginBottom: '0.85rem', fontSize: '0.88rem', color: 'var(--text-main)', display: 'flex', gap: '1rem' }}>
                 {product.fabric && (
                   <div><strong>Fabric:</strong> {product.fabric}</div>
                 )}
@@ -158,25 +158,34 @@ export const ProductDetailModal = ({
               </div>
             )}
 
-            {/* Dynamic Variant Options */}
+            {/* Dynamic Variant Options with Strong Contrast Selection */}
             {product.variants && product.variants.length > 0 && (
               <div className="variant-picker-section">
                 {product.variants.map((vGroup) => (
                   <div key={vGroup.name}>
                     <div className="variant-group-title">
-                      Select {vGroup.name}: <span style={{ color: 'var(--primary-rose)' }}>{selectedVariants[vGroup.name]}</span>
+                      Select {vGroup.name}: <span style={{ color: 'var(--brand-plum)', fontWeight: 800 }}>{selectedVariants[vGroup.name]}</span>
                     </div>
                     <div className="variant-options-wrap">
-                      {vGroup.options.map((opt) => (
-                        <button
-                          key={opt}
-                          onClick={() => handleVariantSelect(vGroup.name, opt)}
-                          className={`variant-opt-btn ${selectedVariants[vGroup.name] === opt ? 'selected' : ''}`}
-                        >
-                          {selectedVariants[vGroup.name] === opt && <Check size={14} style={{ display: 'inline', marginRight: '4px' }} />}
-                          {opt}
-                        </button>
-                      ))}
+                      {vGroup.options.map((opt) => {
+                        const isSelected = selectedVariants[vGroup.name] === opt;
+                        return (
+                          <button
+                            key={opt}
+                            onClick={() => handleVariantSelect(vGroup.name, opt)}
+                            className={`variant-opt-btn ${isSelected ? 'selected' : ''}`}
+                            style={{
+                              backgroundColor: isSelected ? 'var(--brand-plum)' : 'var(--bg-card)',
+                              color: isSelected ? 'white' : 'var(--text-main)',
+                              borderColor: isSelected ? 'var(--brand-plum)' : 'var(--border-color)',
+                              fontWeight: isSelected ? 700 : 500
+                            }}
+                          >
+                            {isSelected && <Check size={14} style={{ display: 'inline', marginRight: '4px' }} />}
+                            {opt}
+                          </button>
+                        );
+                      })}
                     </div>
                   </div>
                 ))}
@@ -185,7 +194,7 @@ export const ProductDetailModal = ({
 
             {/* Botanical Ingredients List */}
             {product.ingredients && product.ingredients.length > 0 && (
-              <div style={{ marginBottom: '1rem', backgroundColor: '#F9FAFB', padding: '0.85rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)' }}>
+              <div style={{ marginBottom: '1rem', backgroundColor: '#F0F7F2', padding: '0.85rem', borderRadius: 'var(--radius-md)', border: '1px solid #C2E0BA' }}>
                 <div style={{ fontSize: '0.85rem', fontWeight: 700, marginBottom: '0.35rem', color: 'var(--secondary-sage)' }}>
                   🌿 Botanical Ingredients:
                 </div>
@@ -198,7 +207,7 @@ export const ProductDetailModal = ({
             )}
 
             {/* Quantity Selector */}
-            <div style={{ marginBottom: '1.25rem' }}>
+            <div style={{ marginBottom: '1.15rem' }}>
               <div className="variant-group-title">Select Quantity:</div>
               <div className="qty-selector">
                 <button
@@ -219,15 +228,15 @@ export const ProductDetailModal = ({
             </div>
 
             {/* Custom Notes / Delivery Location Note */}
-            <div style={{ marginBottom: '1.5rem' }}>
-              <label style={{ fontSize: '0.85rem', fontWeight: 700, display: 'block', marginBottom: '0.35rem', color: 'var(--text-main)' }}>
+            <div style={{ marginBottom: '1.25rem' }}>
+              <label style={{ fontSize: '0.82rem', fontWeight: 700, display: 'block', marginBottom: '0.35rem', color: 'var(--text-main)' }}>
                 Special Request / Delivery Location Note (Optional):
               </label>
               <input
                 type="text"
                 value={customNotes}
                 onChange={(e) => setCustomNotes(e.target.value)}
-                placeholder="e.g., Delivery area or preferred color choice"
+                placeholder="e.g., SPB Colony area or preferred color choice"
                 style={{
                   width: '100%',
                   padding: '0.5rem 0.75rem',
@@ -239,7 +248,7 @@ export const ProductDetailModal = ({
             </div>
 
             {/* Action Buttons */}
-            <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
               <button
                 onClick={handleOrder}
                 disabled={!stockInfo.isOrderable}
@@ -247,7 +256,7 @@ export const ProductDetailModal = ({
                 style={{
                   width: '100%',
                   minHeight: '52px',
-                  fontSize: '1.05rem',
+                  fontSize: '1rem',
                   opacity: stockInfo.isOrderable ? 1 : 0.5,
                   cursor: stockInfo.isOrderable ? 'pointer' : 'not-allowed'
                 }}
@@ -258,8 +267,8 @@ export const ProductDetailModal = ({
                 </span>
               </button>
 
-              <div style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                ⚡ Opens WhatsApp with pre-filled Product ID ({product.productId}), size/variant, and quantity.
+              <div style={{ textAlign: 'center', fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                ⚡ Tap button above — Sumathi will receive your selected product details on WhatsApp instantly.
               </div>
             </div>
           </div>

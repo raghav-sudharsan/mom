@@ -16,33 +16,29 @@ export function generateWhatsAppLink({
 }: OrderOptions): string {
   const number = STORE_CONFIG.whatsappNumber.replace(/[^0-9]/g, '');
 
-  let message = `Hello! I would like to order this product from your website:\n\n`;
-  message += `📦 *Product ID:* ${product.productId}\n`;
-  message += `🏷️ *Product Name:* ${product.name}\n`;
-  message += `💰 *Price:* ₹${product.price}\n`;
+  let message = `Hello! I would like to order this product from Sumathi's Collections:\n\n`;
+  message += `- *Item Code:* ${product.productId}\n`;
+  message += `- *Product Name:* ${product.name}\n`;
+  message += `- *Price:* ₹${product.price}\n`;
 
   // Append variants (e.g. Size, Color, Pack Size)
   Object.entries(selectedVariants).forEach(([key, val]) => {
     if (val) {
-      let icon = '⚙️';
-      if (key.toLowerCase().includes('size')) icon = '📏';
-      if (key.toLowerCase().includes('color')) icon = '🎨';
-      if (key.toLowerCase().includes('pack')) icon = '⚖️';
-      message += `${icon} *${key}:* ${val}\n`;
+      message += `- *${key}:* ${val}\n`;
     }
   });
 
-  message += `🔢 *Quantity:* ${quantity}\n`;
-  message += `💵 *Estimated Subtotal:* ₹${product.price * quantity}\n`;
+  message += `- *Quantity:* ${quantity}\n`;
+  message += `- *Estimated Subtotal:* ₹${product.price * quantity}\n`;
 
   if (customNotes && customNotes.trim()) {
-    message += `📝 *Notes:* ${customNotes.trim()}\n`;
+    message += `- *Note / Delivery Area:* ${customNotes.trim()}\n`;
   }
 
-  message += `\nPlease confirm product availability, total price including delivery, and payment options. Thank you!`;
+  message += `\nPlease confirm product availability, total price including delivery to my area, and payment options. Thank you!`;
 
   const encodedText = encodeURIComponent(message);
-  return `https://wa.me/${number}?text=${encodedText}`;
+  return `https://api.whatsapp.com/send?phone=${number}&text=${encodedText}`;
 }
 
 export function openWhatsAppOrder(options: OrderOptions): void {

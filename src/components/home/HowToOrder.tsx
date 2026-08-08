@@ -1,42 +1,54 @@
-import { Search, Hash, MessageCircle, Truck } from 'lucide-react';
+import { Search, Hash, MessageCircle, CheckCircle2, Truck } from 'lucide-react';
 
 export const HowToOrder = () => {
   const steps = [
     {
-      number: 1,
+      number: "01",
       icon: <Search size={22} />,
-      title: "01. Browse Products",
-      description: "Explore our categories or search by product name/category to find what you want."
+      title: "Browse Collection",
+      description: "Explore women's apparel, sarees, dresses, kids wear & natural powders."
     },
     {
-      number: 2,
+      number: "02",
       icon: <Hash size={22} />,
-      title: "02. Note Product ID",
-      description: "Check the unique Product ID (e.g. NIT-001, KDS-001) and select your preferred size or color."
+      title: "Note Product ID",
+      description: "Check the unique Product ID (e.g. NIT-001, KDS-001) & select your size or color."
     },
     {
-      number: 3,
+      number: "03",
       icon: <MessageCircle size={22} />,
-      title: "03. Order on WhatsApp",
-      description: "Click 'Order on WhatsApp'. A pre-filled message with your product details opens automatically."
+      title: "WhatsApp Us",
+      description: "Click 'Order on WhatsApp'. A pre-filled message with details opens automatically."
     },
     {
-      number: 4,
+      number: "04",
+      icon: <CheckCircle2 size={22} />,
+      title: "We Confirm",
+      description: "Sumathi will confirm availability, price, and payment options directly with you."
+    },
+    {
+      number: "05",
       icon: <Truck size={22} />,
-      title: "04. We Confirm & Deliver",
-      description: "Sumathi will confirm availability, price, and delivery details directly with you."
+      title: "Safe Delivery",
+      description: "We arrange delivery based on your location in Kumarapalayam or across India."
     }
   ];
 
   return (
     <section className="how-to-order-section">
       <div className="container">
-        <h2 className="section-title">How to Order in 4 Easy Steps</h2>
+        <h2 className="section-title">How to Order in 5 Easy Steps</h2>
         <p className="section-subtitle">
-          No complicated sign-up or online payment forms required. Simple, personal, and friendly shopping for your family!
+          No complicated sign-up or online payment forms required. Simple, personal, and friendly shopping!
         </p>
 
-        <div className="steps-grid">
+        <div 
+          style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
+            gap: '1rem' 
+          }}
+        >
           {steps.map((s) => (
             <div key={s.number} className="step-card">
               <div className="step-number" style={{ backgroundColor: 'var(--brand-plum)' }}>{s.number}</div>

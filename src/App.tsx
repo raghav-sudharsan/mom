@@ -35,7 +35,7 @@ export function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 250);
+    }, 200);
     return () => clearTimeout(timer);
   }, []);
 
@@ -70,6 +70,8 @@ export function App() {
     const catalogEl = document.getElementById('catalog');
     if (catalogEl) {
       catalogEl.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: 800, behavior: 'smooth' });
     }
   };
 
@@ -77,6 +79,8 @@ export function App() {
     const naturalEl = document.getElementById('natural-care');
     if (naturalEl) {
       naturalEl.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: 1200, behavior: 'smooth' });
     }
   };
 
@@ -85,12 +89,15 @@ export function App() {
       {/* Sticky Header */}
       <Header
         activeCategory={activeCategory}
-        onSelectCategory={setActiveCategory}
+        onSelectCategory={(catId) => {
+          setActiveCategory(catId);
+          scrollToCatalog();
+        }}
         onOpenPolicies={() => setIsPoliciesOpen(true)}
       />
 
       {/* Main Content Body */}
-      <main style={{ flexGrow: 1 }}>
+      <main style={{ flexGrow: 1, paddingBottom: '70px' }}>
         {/* Hero Section */}
         <HeroSection onExploreClick={scrollToCatalog} />
 
@@ -219,34 +226,38 @@ export function App() {
       {/* Mobile Sticky Bottom Action Navigation Bar */}
       <nav className="mobile-bottom-nav">
         <button
+          type="button"
           className={`mobile-nav-btn ${activeCategory === 'all' ? 'active' : ''}`}
           onClick={() => {
             setActiveCategory('all');
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
         >
-          <Home size={18} />
+          <Home size={20} />
           <span>Home</span>
         </button>
 
         <button
+          type="button"
           className="mobile-nav-btn"
           onClick={() => {
+            setActiveCategory('all');
             scrollToCatalog();
           }}
         >
-          <ShoppingBag size={18} />
+          <ShoppingBag size={20} />
           <span>Catalog</span>
         </button>
 
         <button
+          type="button"
           className="mobile-nav-btn"
           onClick={() => {
             setActiveCategory('natural-care');
             scrollToNaturalCare();
           }}
         >
-          <Sparkles size={18} color="var(--secondary-sage)" />
+          <Sparkles size={20} color="var(--secondary-sage)" />
           <span style={{ color: 'var(--secondary-sage)' }}>Natural</span>
         </button>
 
@@ -256,7 +267,7 @@ export function App() {
           rel="noopener noreferrer"
           className="mobile-nav-btn whatsapp-nav"
         >
-          <MessageCircle size={20} color="var(--whatsapp-green)" />
+          <MessageCircle size={22} color="var(--whatsapp-green)" />
           <span>WhatsApp</span>
         </a>
       </nav>
