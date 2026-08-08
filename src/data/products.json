@@ -1,0 +1,306 @@
+[
+  {
+    "id": "prod-1",
+    "productId": "NIT-001",
+    "name": "Floral Premium Cotton Nightie",
+    "slug": "floral-premium-cotton-nightie",
+    "categoryId": "nighties",
+    "price": 499,
+    "originalPrice": 699,
+    "shortDescription": "Breathable 100% pure cotton nightwear with elegant floral print.",
+    "fullDescription": "Designed for maximum comfort and relaxation during warm nights. Made from soft, skin-friendly 100% pure cotton fabric featuring fine floral prints, reinforced stitching, and a relaxed classic fit.",
+    "images": [
+      "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "stockStatus": "in_stock",
+    "fabric": "100% Pure Cotton",
+    "colors": ["Rose Pink", "Sky Blue", "Mint Green"],
+    "sizes": ["Free Size", "L", "XL", "XXL"],
+    "variants": [
+      {
+        "name": "Size",
+        "options": ["Free Size", "L", "XL", "XXL"]
+      },
+      {
+        "name": "Color",
+        "options": ["Rose Pink", "Sky Blue", "Mint Green"]
+      }
+    ],
+    "careInstructions": ["Hand wash or gentle machine wash", "Do not bleach", "Iron on medium heat"],
+    "featured": true,
+    "createdAt": "2026-08-01"
+  },
+  {
+    "id": "prod-2",
+    "productId": "NIT-002",
+    "name": "Soft Rayon Embroidered Night Gown",
+    "slug": "soft-rayon-embroidered-night-gown",
+    "categoryId": "nighties",
+    "price": 599,
+    "originalPrice": 799,
+    "shortDescription": "Ultra-soft rayon night gown with delicate neckline embroidery.",
+    "fullDescription": "Elevate your evening routine with this luxurious rayon night gown. Features intricate thread work around the neck, half sleeves, side slit pocket, and lightweight drape.",
+    "images": [
+      "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=80"
+    ],
+    "stockStatus": "limited_stock",
+    "fabric": "Premium Rayon Blend",
+    "colors": ["Maroon", "Navy Blue", "Teal"],
+    "sizes": ["M", "L", "XL"],
+    "variants": [
+      {
+        "name": "Size",
+        "options": ["M", "L", "XL"]
+      },
+      {
+        "name": "Color",
+        "options": ["Maroon", "Navy Blue", "Teal"]
+      }
+    ],
+    "careInstructions": ["Gentle hand wash recommended", "Dry in shade"],
+    "featured": false,
+    "createdAt": "2026-08-02"
+  },
+  {
+    "id": "prod-3",
+    "productId": "DRS-001",
+    "name": "Anarkali Ethnic Cotton Dress",
+    "slug": "anarkali-ethnic-cotton-dress",
+    "categoryId": "dresses",
+    "price": 899,
+    "originalPrice": 1299,
+    "shortDescription": "Traditional flared cotton Anarkali dress with matching dupatta.",
+    "fullDescription": "Perfect for festive gatherings and casual family outings. Crafted with breathable Jaipur cotton print, full flair silhouette, 3/4 sleeves, and fine lace trimming.",
+    "images": [
+      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "stockStatus": "in_stock",
+    "fabric": "Jaipur Printed Cotton",
+    "colors": ["Mustard Yellow", "Deep Crimson", "Indigo Blue"],
+    "sizes": ["S", "M", "L", "XL"],
+    "variants": [
+      {
+        "name": "Size",
+        "options": ["S", "M", "L", "XL"]
+      },
+      {
+        "name": "Color",
+        "options": ["Mustard Yellow", "Deep Crimson", "Indigo Blue"]
+      }
+    ],
+    "careInstructions": ["First wash separate", "Use mild detergent"],
+    "featured": true,
+    "createdAt": "2026-08-03"
+  },
+  {
+    "id": "prod-4",
+    "productId": "SAR-001",
+    "name": "Handloom Pure Soft Cotton Saree",
+    "slug": "handloom-pure-soft-cotton-saree",
+    "categoryId": "sarees",
+    "price": 999,
+    "originalPrice": 1499,
+    "shortDescription": "Traditional handloom cotton saree with woven zari border.",
+    "fullDescription": "Lightweight, airy, and graceful handloom cotton saree. Features an authentic woven golden zari pallu and contrasts unstitched blouse piece included.",
+    "images": [
+      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "stockStatus": "in_stock",
+    "fabric": "Handloom Soft Cotton",
+    "colors": ["Royal Blue & Gold", "Emerald Green", "Pastel Peach"],
+    "variants": [
+      {
+        "name": "Color Combination",
+        "options": ["Royal Blue & Gold", "Emerald Green", "Pastel Peach"]
+      }
+    ],
+    "careInstructions": ["Dry clean or gentle cold hand wash"],
+    "featured": true,
+    "createdAt": "2026-08-04"
+  },
+  {
+    "id": "prod-5",
+    "productId": "BLS-001",
+    "name": "Stretchable Cotton Lycra Readymade Blouse",
+    "slug": "stretchable-cotton-lycra-readymade-blouse",
+    "categoryId": "blouses",
+    "price": 349,
+    "originalPrice": 499,
+    "shortDescription": "Hassle-free stretchable readymade blouse fitting sizes 32 to 42.",
+    "fullDescription": "Comfortable readymade stretch blouse designed to pair effortlessly with any saree. Made with durable cotton lycra blend fabric, elbow length sleeves, and elegant round neckline.",
+    "images": [
+      "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "stockStatus": "in_stock",
+    "fabric": "Cotton Lycra Stretch Blend",
+    "colors": ["Classic Black", "Golden Shimmer", "Ruby Red", "Bottle Green"],
+    "sizes": ["Free Size (32-42)"],
+    "variants": [
+      {
+        "name": "Color",
+        "options": ["Classic Black", "Golden Shimmer", "Ruby Red", "Bottle Green"]
+      }
+    ],
+    "careInstructions": ["Machine wash cold", "Do not twist"],
+    "featured": false,
+    "createdAt": "2026-08-05"
+  },
+  {
+    "id": "prod-6",
+    "productId": "INW-001",
+    "name": "Everyday Comfort Cotton Innerwear Set",
+    "slug": "everyday-comfort-cotton-innerwear-set",
+    "categoryId": "innerwear",
+    "price": 399,
+    "originalPrice": 550,
+    "shortDescription": "Ultra-soft 100% combed cotton everyday innerwear essentials.",
+    "fullDescription": "Superior breathable innerwear set designed for all-day comfort. Features non-wire support, soft elastic bands that leave no marks, and moisture-absorbing natural cotton.",
+    "images": [
+      "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=800&q=80"
+    ],
+    "stockStatus": "in_stock",
+    "fabric": "100% Combed Cotton",
+    "colors": ["Nude/Beige", "White", "Black"],
+    "sizes": ["32B", "34B", "36B", "38B", "40B"],
+    "variants": [
+      {
+        "name": "Size",
+        "options": ["32B", "34B", "36B", "38B", "40B"]
+      },
+      {
+        "name": "Color",
+        "options": ["Nude/Beige", "White", "Black"]
+      }
+    ],
+    "careInstructions": ["Hand wash only", "Air dry flat"],
+    "featured": false,
+    "createdAt": "2026-08-05"
+  },
+  {
+    "id": "prod-kds-1",
+    "productId": "KDS-001",
+    "name": "Soft Cotton Printed Kids Frock",
+    "slug": "soft-cotton-printed-kids-frock",
+    "categoryId": "kids",
+    "price": 399,
+    "originalPrice": 599,
+    "shortDescription": "Adorable 100% pure cotton breathable dress for girls (Ages 2-10 Yrs).",
+    "fullDescription": "Delightful summer cotton frock designed for active kids. Soft skin-friendly natural cotton, gentle inner lining, bright botanical prints, and easy back zipper.",
+    "images": [
+      "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=800&q=80"
+    ],
+    "stockStatus": "in_stock",
+    "fabric": "100% Pure Soft Cotton",
+    "colors": ["Peach Floral", "Sunny Yellow", "Sky Lavender"],
+    "sizes": ["2-4 Yrs", "4-6 Yrs", "6-8 Yrs", "8-10 Yrs"],
+    "variants": [
+      {
+        "name": "Age Group",
+        "options": ["2-4 Yrs", "4-6 Yrs", "6-8 Yrs", "8-10 Yrs"]
+      },
+      {
+        "name": "Color",
+        "options": ["Peach Floral", "Sunny Yellow", "Sky Lavender"]
+      }
+    ],
+    "careInstructions": ["Gentle hand wash or machine wash"],
+    "featured": true,
+    "createdAt": "2026-08-08"
+  },
+  {
+    "id": "prod-7",
+    "productId": "PRF-001",
+    "name": "Royal Jasmine & Rose Eau De Parfum",
+    "slug": "royal-jasmine-rose-eau-de-parfum",
+    "categoryId": "perfumes",
+    "price": 649,
+    "originalPrice": 899,
+    "shortDescription": "Long-lasting premium floral fragrance mist (50ml).",
+    "fullDescription": "An enchanting blend of crushed fresh Rose petals, Jasmine Sambac, and subtle woody base notes. Formulated to provide 12+ hours of subtle, elegant fragrance.",
+    "images": [
+      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80"
+    ],
+    "stockStatus": "in_stock",
+    "netWeight": "50ml Spray Bottle",
+    "variants": [
+      {
+        "name": "Bottle Size",
+        "options": ["50ml Spray"]
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-08-06"
+  },
+  {
+    "id": "prod-8",
+    "productId": "NHP-001",
+    "name": "Handmade Hibiscus & Flower Herbal Powder",
+    "slug": "handmade-hibiscus-flower-herbal-powder",
+    "categoryId": "natural-care",
+    "price": 149,
+    "originalPrice": 199,
+    "shortDescription": "Pure botanical powder handcrafted with dried Hibiscus, Rose & natural herbs.",
+    "fullDescription": "Traditionally prepared personal-care powder crafted using sun-dried Hibiscus flowers, Rose petals, Amla, and selected botanical herbs. Designed as a gentle, natural addition to your daily skin and hair wellness routines.",
+    "images": [
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80"
+    ],
+    "stockStatus": "in_stock",
+    "isNaturalProduct": true,
+    "packSizes": ["20g Packet", "100g Eco-Pouch"],
+    "ingredients": [
+      "Sun-Dried Red Hibiscus Flower Petals (Hibiscus rosa-sinensis)",
+      "Damask Rose Petal Extract Powder",
+      "Organic Amla Fruit Powder",
+      "Wild Turmeric (Kasturi Manjal)",
+      "Natural Multani Botanical Clay"
+    ],
+    "usageInstructions": "Mix 1-2 teaspoons of powder with plain water, rose water, or curd to form a smooth paste. Apply gently on skin or scalp, leave for 10-15 minutes, and rinse thoroughly with clean water.",
+    "precautions": "For external personal-care use only. Perform a small skin patch test behind the ear 24 hours before full application. Discontinue use if irritation occurs.",
+    "variants": [
+      {
+        "name": "Pack Size",
+        "options": ["20g Packet (₹49)", "100g Eco-Pouch (₹149)"]
+      }
+    ],
+    "featured": true,
+    "createdAt": "2026-08-07"
+  },
+  {
+    "id": "prod-9",
+    "productId": "NHP-002",
+    "name": "Handmade Floral Body Wash Powder",
+    "slug": "handmade-floral-body-wash-powder",
+    "categoryId": "natural-care",
+    "price": 179,
+    "originalPrice": 249,
+    "shortDescription": "Traditional herbal bath powder with Vetiver, Hibiscus & Sandalwood.",
+    "fullDescription": "An authentic chemical-free bath cleanser (Snana Chooranam) handcrafted with soothing Vetiver roots, Hibiscus petals, Green gram, and real Sandalwood. Leaves skin feeling naturally refreshed and subtly scented.",
+    "images": [
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80"
+    ],
+    "stockStatus": "in_stock",
+    "isNaturalProduct": true,
+    "packSizes": ["100g Pack", "250g Family Pack"],
+    "ingredients": [
+      "Vetiver (Khus Root)",
+      "Hibiscus Flowers",
+      "Green Gram Flour",
+      "White Sandalwood Powder",
+      "Neem Leaf Extract"
+    ],
+    "usageInstructions": "Mix with water during bath and gently scrub over body as a natural soap replacement.",
+    "precautions": "Keep pouch dry and sealed. For external application only.",
+    "variants": [
+      {
+        "name": "Pack Size",
+        "options": ["100g Pack (₹179)", "250g Family Pack (₹399)"]
+      }
+    ],
+    "featured": false,
+    "createdAt": "2026-08-08"
+  }
+]

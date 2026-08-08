@@ -1,0 +1,70 @@
+[
+  {
+    "id": "nighties",
+    "name": "Nighties & Nightwear",
+    "description": "Comfortable soft cotton & rayon nightwear for daily elegance.",
+    "iconName": "Moon",
+    "badge": "Popular",
+    "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=600&q=80",
+    "accentColor": "#C85272"
+  },
+  {
+    "id": "sarees",
+    "name": "Sarees Collection",
+    "description": "Graceful cotton, silk blend, georgette & designer sarees.",
+    "iconName": "Sparkles",
+    "badge": "Festive",
+    "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+    "accentColor": "#D4AF37"
+  },
+  {
+    "id": "dresses",
+    "name": "Women's Dresses",
+    "description": "Stylish casual, ethnic Jaipur Anarkalis, and western dresses.",
+    "iconName": "Shirt",
+    "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=600&q=80",
+    "accentColor": "#9E2B4B"
+  },
+  {
+    "id": "blouses",
+    "name": "Designer Blouses",
+    "description": "Readymade & stretchable blouses in versatile colors & patterns.",
+    "iconName": "Scissors",
+    "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=600&q=80",
+    "accentColor": "#4A1224"
+  },
+  {
+    "id": "innerwear",
+    "name": "Comfort Innerwear",
+    "description": "High-quality, breathable everyday innerwear essentials.",
+    "iconName": "Heart",
+    "image": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=600&q=80",
+    "accentColor": "#E06666"
+  },
+  {
+    "id": "kids",
+    "name": "Kids & Family Wear",
+    "description": "Soft cotton frocks, kids' ethnic wear, and family comfort wear.",
+    "iconName": "Smile",
+    "badge": "New",
+    "image": "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=600&q=80",
+    "accentColor": "#E07A5F"
+  },
+  {
+    "id": "perfumes",
+    "name": "Perfumes & Attars",
+    "description": "Long-lasting floral, exotic & daily personal fragrances.",
+    "iconName": "Flame",
+    "image": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80",
+    "accentColor": "#7B1FA2"
+  },
+  {
+    "id": "natural-care",
+    "name": "Natural Herbal Care",
+    "description": "Handmade botanical powders crafted with Hibiscus & natural flowers.",
+    "iconName": "Leaf",
+    "badge": "Handmade",
+    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80",
+    "accentColor": "#2E5A36"
+  }
+]

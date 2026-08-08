@@ -1,0 +1,182 @@
+@import './variables.css';
+
+/* Global Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--brand-plum);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Accessibility Focus Ring */
+*:focus-visible {
+  outline: 2px solid var(--primary-rose);
+  outline-offset: 2px;
+}
+
+/* Reduced Motion Accessibility Respect */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility Containers */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--brand-plum);
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.25rem;
+  }
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+/* Badge Styles */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.badge-primary {
+  background-color: var(--primary-rose-light);
+  color: var(--primary-rose);
+}
+
+.badge-plum {
+  background-color: var(--brand-plum-light);
+  color: var(--brand-plum);
+}
+
+.badge-success {
+  background-color: #DEF7EC;
+  color: #03543F;
+}
+
+.badge-warning {
+  background-color: #FEF08A;
+  color: #713F12;
+}
+
+.badge-danger {
+  background-color: #FDE8E8;
+  color: #9B1C1C;
+}
+
+.badge-info {
+  background-color: #E1EFFE;
+  color: #1E429F;
+}
+
+.badge-gold {
+  background-color: var(--accent-gold-light);
+  color: #854D0E;
+}
+
+.badge-botanical {
+  background-color: var(--secondary-sage-light);
+  color: var(--secondary-sage);
+}
+
+/* Monospace Product ID Badge */
+.product-id-badge {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #F7EFE9;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--brand-plum);
+  letter-spacing: 0.05em;
+}
+
+/* Skeleton Loading Shimmer */
+.skeleton {
+  background: linear-gradient(90deg, #F0E8E2 25%, #FAF5F0 50%, #F0E8E2 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-sm);
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

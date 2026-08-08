@@ -1,0 +1,6 @@
+/* Clean root styling - custom styles managed in src/assets/styles/ */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

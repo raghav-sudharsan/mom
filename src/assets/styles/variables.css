@@ -1,0 +1,56 @@
+:root {
+  /* Sumathi's Collections Brand Palette */
+  --brand-plum: #4A1224;
+  --brand-plum-hover: #360B19;
+  --brand-plum-light: #F4E8EC;
+  
+  --primary-rose: #C85272;
+  --primary-rose-hover: #A83C5A;
+  --primary-rose-light: #FDF0F3;
+  
+  --secondary-sage: #2E5A36;
+  --secondary-sage-hover: #214327;
+  --secondary-sage-light: #F0F7F2;
+  
+  --accent-gold: #D4AF37;
+  --accent-gold-light: #FFF9E6;
+  
+  --accent-blush: #FBF0E9;
+  --accent-peach: #F7E5D9;
+  
+  --whatsapp-green: #25D366;
+  --whatsapp-green-hover: #1DA851;
+  --whatsapp-green-light: #E8F9EE;
+  
+  /* Neutral Warm Backgrounds & Cards */
+  --bg-main: #FAF7F2;
+  --bg-card: #FFFFFF;
+  --bg-subtle: #F5EFE8;
+  --border-color: #EADFD5;
+  --border-focus: #C85272;
+  
+  --text-main: #2A1C22;
+  --text-muted: #64535B;
+  --text-light: #9B8C93;
+  --text-inverse: #FFFFFF;
+  
+  /* Brand Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Shadows & Elevation */
+  --shadow-sm: 0 2px 4px 0 rgba(74, 18, 36, 0.04);
+  --shadow-md: 0 6px 12px -2px rgba(74, 18, 36, 0.08), 0 3px 6px -2px rgba(74, 18, 36, 0.04);
+  --shadow-lg: 0 16px 24px -4px rgba(74, 18, 36, 0.12), 0 8px 10px -4px rgba(74, 18, 36, 0.06);
+  --shadow-glass: 0 8px 32px 0 rgba(74, 18, 36, 0.08);
+  
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
